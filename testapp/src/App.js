@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import ModalExample from './modal'
 import './App.css';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+
 
 function welcome() {
   var listOfPeople = [
@@ -28,7 +31,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          
+          <Button className="Danger">BOOSHH</Button>
+          <button className="Danger">BOOSHH</button>
+
           <h1 className="App-title">Welcome to Hell</h1>
         </header>
         <p className="App-intro" styles="margin-bottom: 25px;">
@@ -39,7 +44,7 @@ class App extends Component {
          <img src="http://www.nowtheendbegins.com/wp-content/uploads/2015/10/6-horrific-facts-about-hell-you-need-to-know-sheol-hades-gehenna.jpg" />
         </div>
         <div>
-          <p> {welcome} </p>
+          <ModalExample />
         </div>
       </div>
     );
