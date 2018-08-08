@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import ModalExample from './modal'
+import Clock from './Clock'
 import './App.css';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
@@ -41,10 +42,13 @@ class App extends Component {
         </p>
         <div>
         
-         <img src="http://www.nowtheendbegins.com/wp-content/uploads/2015/10/6-horrific-facts-about-hell-you-need-to-know-sheol-hades-gehenna.jpg" />
+         <img src="http://www.nowtheendbegins.com/wp-content/uploads/2015/10/6-horrific-facts-about-hell-you-need-to-know-sheol-hades-gehenna.jpg" alt="Hell is real only in the minds of humans." />
         </div>
         <div>
           <ModalExample />
+        </div>
+        <div>
+          <Clock />    
         </div>
       </div>
     );
